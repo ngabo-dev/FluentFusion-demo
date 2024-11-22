@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar {
+    margin-bottom: 0;
+}
+
+header .container {
+    max-width: 960px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+header p {
+    margin-bottom: 30px;
+}
+
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
