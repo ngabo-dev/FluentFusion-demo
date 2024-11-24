@@ -41,13 +41,18 @@
 body {
   background-color: #f4f4f4; /* Replace with your desired color */
   margin: 0; /* Remove default margins */
-  font-family: Arial, sans-serif; /* Optional */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 90%; /* Reduces text size */
+  line-height: 1.4; /* Adjust line spacing */
 }
+
+
 
 
 /* Custom Styles for Dashboard Design */
 
-/* Sidebar Styles */
 /* Sidebar Styles */
 .sidebar {
   width: 250px;
@@ -222,11 +227,7 @@ body {
 
 
 /* Reduce the size of the Doughnut chart */
-.chart-container {
-  width: 200px; /* Set a smaller width */
-  height: 200px; /* Set a smaller height */
-  margin: 0 auto;
-}
+
 
 .legend {
   display: flex;
@@ -266,9 +267,241 @@ body {
   text-align: center;
 }
 
+.chart-container {
+  width: 300px;
+  height: 250px;
+  /* margin: 0 auto; */
+  background-color: #f0f0f0; /* Slightly different for clarity */
+  border-radius: 10px;
+}
+
 .course-topic {
-  flex: 1; /* 1/4 of the remaining space */
-  padding: 20px;
+  flex: 1; /* Retain flexible layout */
+  padding: 20px; /* Add padding for content spacing */
   background-color: #f9f9f9;
   border-radius: 10px;
+  padding: 40px;
+}
+
+.topic {
+  display: flex;
+}
+
+.dropdown {
+  margin-left: 60px;
+}
+
+.other-btn {
+  background-color: #FFF86B;
+  border-radius: unset;
+}
+
+.other-btn:hover {
+  background: #f0e68c;
+}
+
+
+.header {
+  background-image: url(/public/images/Visit-Rwanda.jpg);
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+  background-position: 50% 15%; /* 50% horizontally, 20% vertically */
+  max-height: 400px;
+}
+
+.carousel-inner img {
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel-item h3 {
+  margin-bottom: 15px;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Change chevron color to black */
+  width: 30px; /* Increase arrow size */
+  height: 30px;
+  background-size: 100%; /* Ensure arrows scale correctly */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px; /* Increase width */
+  height: 100%; /* Increase height */
+  /* background-color: rgba(0, 0, 0, 0.3); Semi-transparent background */
+  border-radius: 50%; /* Circular shape */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding-top: 133%; /* 3:4 aspect ratio (4/3 * 100%) */
+  overflow: hidden;
+  border-radius: 10px;
+  aspect-ratio: 3 / 4;
+  margin: auto;
+}
+
+
+.image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: auto; /* Maintain aspect ratio */
+  transform: translate(-50%, -50%) scale(1.1); /* Centers and zooms */
+  object-fit: cover; /* Ensures filling within 3:4 */
+  transition: transform 0.3s ease; /* Smooth transition for interaction */
+}
+
+.image-container img:hover {
+  transform: translate(-50%, -50%) scale(1); /* Reset zoom on hover */
+}
+
+
+.p-content {
+  color: #D6D05A;
+}
+
+#personalized-learning-path {
+  background-color: #FFF86B;
+  padding: 40px 0px 40px;
+}
+
+.card-path{
+  box-shadow: none;
+  background-color: #FFF86B;
+}
+
+#monitor-progress {
+  padding-top: 50px;
+  margin: auto;
+}
+
+.progress-card {
+  max-width: 300px;
+  max-height: 600px;
+  margin: 10px 20px; /* Top/Bottom: 10px, Left/Right: 20px */
+}
+
+.card-img-top {
+  height: 300px; /* Adjust height as needed */
+  /* object-fit: cover; */
+}
+
+.btn-primary {
+  background-color: #FFF86B;
+  border-color: #FFF86B;
+  margin: 10px;
+  color: #000;
+  border-radius: unset;
+}
+
+.images {
+  height: 600px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 500px;
+}
+.middle {
+  height: 350px;
+}
+
+
+
+/* Navbar Styling */
+.nav-bar {
+  background: rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 10;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.signup-btn {
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.signup-btn:hover {
+  background: #f0e68c;
+}
+
+/* Background Animation */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle, rgba(20, 20, 50, 1) 0%, rgba(10, 10, 30, 1) 100%);
+  overflow: hidden;
+}
+
+/* Stars Animation */
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: transparent;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: move-star 8s linear infinite;
+}
+
+@keyframes move-star {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-10vh);
+  }
+}
+
+/* Generate multiple stars dynamically */
+@keyframes move-bubbles {
+  0% {
+    transform: translateY(100%) translateX(0);
+  }
+  100% {
+    transform: translateY(-100%) translateX(20px);
+  }
 }

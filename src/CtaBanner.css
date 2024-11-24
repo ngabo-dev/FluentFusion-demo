@@ -1,0 +1,72 @@
+/* CTA Banner Styling */
+.cta-banner {
+    background: linear-gradient(135deg, #0066ff, #00ccff);
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-banner::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    animation: float-bubble 5s ease-in-out infinite;
+  }
+  
+  .cta-banner::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: float-bubble 7s ease-in-out infinite;
+  }
+  
+  .cta-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cta-subtext {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+  }
+  
+  .cta-btn {
+    font-weight: bold;
+    color: #0066ff;
+    background: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background: #f0f0f0;
+    color: #004aad;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Floating Bubble Animation */
+  @keyframes float-bubble {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  

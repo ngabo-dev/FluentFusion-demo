@@ -4,11 +4,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
+import './CtaBanner.css';
+import './FAQ.css';
 import SignUpModal from './components/SignUpModal';
 import LoginModal from './components/LoginModal';
 import TermsAndConditions from './components/TermsAndConditions';
 import LandingPage from './components/LandingPage';
 import CoursesDashboard from './components/CoursesDashboard';
+import AboutUsSection from './components/AboutUsSection';
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
             <Route path="/LandingPage" element={<LandingPage />} />
             <Route path="/CoursesDashboard" element={<CoursesDashboard />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/about-us" element={<AboutUsSection />} />
           </Routes>
 
           {/* Modals handled separately */}

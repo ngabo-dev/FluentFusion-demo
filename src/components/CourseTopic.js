@@ -16,16 +16,19 @@ function CourseTopic() {
 
   return (
     <div className="course-topic">
-      <h2>Course Topic</h2>
-      <select>
-        <option>This Week</option>
-        <option>This Month</option>
-        <option>This Year</option>
-      </select>
+      <div className='topic'>
+        <h2>Course Topic</h2>
+        <select className='dropdown'>
+          <option>This Week</option>
+          <option>This Month</option>
+          <option>This Year</option>
+        </select>
+      </div>
       {/* Set a smaller container size for the chart */}
       <div className="chart-container">
         <Doughnut data={courseData} />
       </div>
+      {/* Render legend only once */}
       <div className="legend">
         {courseData.labels.map((label, index) => (
           <div className="legend-item" key={index}>
@@ -37,7 +40,6 @@ function CourseTopic() {
           </div>
         ))}
       </div>
-      <p>Total: {courseData.datasets[0].data.reduce((a, b) => a + b, 0)}</p>
     </div>
   );
 }
