@@ -4,28 +4,54 @@ import { Link } from 'react-router-dom';
 function AboutUsSection() {
   return (
     <div>
-      {/* NavBar Section */}
+      {/* The NavBar */}
       <nav className="navbar navbar-expand-lg navbar-dark nav-bar">
-        <div className="container nav">
-          <a className="navbar-brand" href="#f">
-            <img src="/images/Screenshot from 2024-11-22 17-35-34.png" alt="FluentFusion Logo" height="50" />
-          </a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item"><a className="nav-link" href="/LandingPage">Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#features">Courses</a></li>
-              <li className="nav-item"><a className="nav-link" href="#about">Resources</a></li>
-              <li className="nav-item"><Link className="nav-link" to="/about-us">About Us</Link></li>
-              <li className="nav-item"><a className="nav-link" href="#testimonials">Contact</a></li>
-              <li className="nav-item"><a className="nav-link" href="#faq">FAQ</a></li>
-            </ul>
-            <a href="#f" className="btn btn-light ms-3 signup-btn" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
-          </div>
-        </div>
-      </nav>
+  <div className="container nav">
+    <a className="navbar-brand" href="#f">
+      <img src="/images/Screenshot from 2024-11-22 17-35-34.png" alt="FluentFusion Logo" />
+    </a>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+    >
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav ms-auto">
+        <li className="nav-item">
+          <a className="nav-link" href="/LandingPage">Home</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#features">Courses</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/LearningResourses">Resources</a>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/about-us">About Us</Link>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="/ContactUs">Contact</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+      <a
+        href="#f"
+        className="btn btn-light ms-3 signup-btn"
+        data-bs-toggle="modal"
+        data-bs-target="#signupModal"
+      >
+        Sign Up
+      </a>
+    </div>
+  </div>
+  <div className="stars"></div>
+  <div className="bubbles"></div>
+</nav>
 
       {/* About Us Content Section */}
       <section id="about-us" className="about-us-section bg-light py-5">

@@ -12,6 +12,8 @@ import TermsAndConditions from './components/TermsAndConditions';
 import LandingPage from './components/LandingPage';
 import CoursesDashboard from './components/CoursesDashboard';
 import AboutUsSection from './components/AboutUsSection';
+import LearningResources from './components/LearningResourses';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path="/CoursesDashboard" element={<CoursesDashboard />} />
             <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
             <Route path="/about-us" element={<AboutUsSection />} />
+            <Route path='/LearningResourses' element={<LearningResources />} />
+            <Route path='/ContactUs' element={<ContactUs/>} />
           </Routes>
 
           {/* Modals handled separately */}

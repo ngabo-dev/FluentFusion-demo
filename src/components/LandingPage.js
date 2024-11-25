@@ -21,19 +21,19 @@ const LandingPage = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav ms-auto">
         <li className="nav-item">
-          <a className="nav-link" href="#courses">Home</a>
+          <a className="nav-link" href="/LandingPage">Home</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#features">Courses</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#about">Resources</a>
+          <a className="nav-link" href="/LearningResourses">Resources</a>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/about-us">About Us</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#testimonials">Contact</a>
+          <a className="nav-link" href="/ContactUs">Contact</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#faq">FAQ</a>
@@ -353,27 +353,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="container my-5">
-        <h2 className="text-center">Contact Us</h2>
-        <form action="#" method="post" className="row g-3">
-          <div className="col-md-6">
-            <label htmlFor="name" className="form-label">Name:</label>
-            <input type="text" id="name" name="name" className="form-control" required />
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="email" className="form-label">Email:</label>
-            <input type="email" id="email" name="email" className="form-control" required />
-          </div>
-          <div className="col-12">
-            <label htmlFor="message" className="form-label">Message:</label>
-            <textarea id="message" name="message" className="form-control" rows="4" required></textarea>
-          </div>
-          <div className="col-12">
-            <button type="submit" className="btn btn-primary other-btn">Send Message</button>
-          </div>
-        </form>
-      </section>
+
 
       {/* Benefits Section */}
       <section id="benefits" className="bg-light py-5">
