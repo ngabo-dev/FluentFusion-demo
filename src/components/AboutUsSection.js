@@ -54,7 +54,7 @@ function AboutUsSection() {
 </nav>
 
       {/* About Us Content Section */}
-      <section id="about-us" className="about-us-section bg-light py-5">
+      <section id="about-us" className="about-us-section bg-light py-5 about-cards">
         <div className="container">
           {/* Section 1 */}
           <div className="row align-items-center mb-5">
